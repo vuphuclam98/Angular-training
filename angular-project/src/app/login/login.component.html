@@ -1,0 +1,9 @@
+<form name="login" ng-controller="ExampleController">
+    <label igxLabel for="name">Name</label>
+    <input type="text" name="name" ngModel="name" required>
+    <label igxLabel for="email">Email</label>
+    <input type="text" ng-pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" name="email" ngModel="email">
+    <label igxLabel for="password">Password</label>
+    <input type="text" name="password" ngModel="password">
+    <h2>{{ name }}</h2>
+</form>
