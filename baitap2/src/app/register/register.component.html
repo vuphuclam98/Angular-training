@@ -1,0 +1,22 @@
+<form (ngSubmit)="onRegister()">
+    <h1>register</h1>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" (ngModel)="username" required>
+    {{username}}
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" (ngModel)="password" required>
+  
+    <label for="email">Email:</label>
+    <input type="email" ng-pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" id="email" name="email" (ngModel)="email" required>
+
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" name="fullname" (ngModel)="fullname" required>
+
+    <label for="address">Addess</label>
+    <input type="text" id="address" name="address" (ngModel)="address" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="text" id="phone" name="phone" (ngModel)="phone" required>
+
+    <button type="button">Register</button>
+  </form>
